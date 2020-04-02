@@ -8,14 +8,12 @@ const userList = [
 
 
 
-// Afficher la liste des utilisateurs majeur 
+userList.f// Afficher la liste des utilisateurs majeur 
 
 function findMajeur(users) {
 
-    // ecrire ton code ici
-    // Inutile de mettre quoi que ce soit en dehors de la fonction
-
-
+    
+    return users.filter(currentUser => currentUser.age < 18);
 }
 
 console.log(findMajeur(userList));
