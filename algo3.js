@@ -25,3 +25,16 @@ const videos = [
 
 // Afficher le nombre moyen de vue  résultat : 407941.2
 // toujours pareil: console.log(taSuperFonction(videos)) // 407941.2
+
+function calculAverage(array){
+    let totalViews = 0;
+    
+    for (const element of array) {
+        totalViews += element.nbView;
+    }
+
+    return totalViews/array.length;
+}
+
+
+console.log(calculAverage(videos))
